@@ -2075,19 +2075,19 @@ p.nominalBounds = new cjs.Rectangle(-177.2,-82.2,354.7,164.2);
 	}
 	this.frame_15 = function() {
 		this.stop();
-		this.garage.play();
+		this.garage.gotoAndPlay(1);
 	}
 	this.frame_30 = function() {
 		this.stop();
-		this.training.play();
+		this.training.gotoAndPlay(1);
 	}
 	this.frame_45 = function() {
 		this.stop();
-		this.canteen.play();
+		this.canteen.gotoAndPlay(1);
 	}
 	this.frame_60 = function() {
 		this.stop();
-		this.shooting.play();
+		this.shooting.gotoAndPlay(1);
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(15).call(this.frame_15).wait(15).call(this.frame_30).wait(15).call(this.frame_45).wait(15).call(this.frame_60).wait(1));
