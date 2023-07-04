@@ -1813,12 +1813,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,118.8,71.8);
 p.nominalBounds = new cjs.Rectangle(-230.3,-116.1,461.1,232.3);
 (lib.traing = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-	// timeline functions:
-	this.frame_0 = function() {
-		this.stop();
-	}
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 	// hitarea
 	this.instance = new lib.hitareas();
 	this.instance.parent = this;
@@ -1952,12 +1946,6 @@ p.nominalBounds = new cjs.Rectangle(-230.3,-116.1,461.1,232.3);
 }).prototype = getMCSymbolPrototype(lib.success_text, new cjs.Rectangle(-340,-305.8,679.9,573), null);
 (lib.shoting = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-	// timeline functions:
-	this.frame_0 = function() {
-		this.stop();
-	}
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 	// hitarea
 	this.instance = new lib.hitareas();
 	this.instance.parent = this;
@@ -2331,18 +2319,12 @@ p.nominalBounds = new cjs.Rectangle(-214.3,-30.6,331.6,190.4);
 p.nominalBounds = new cjs.Rectangle(-827.1,-698.9,1563.9,1559.3);
 (lib.kitc = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-	// timeline functions:
-	this.frame_1 = function() {
-		this.stop();
-	}
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(1));
 	// hitarea
 	this.instance = new lib.hitareas();
 	this.instance.parent = this;
 	this.instance.setTransform(0.25,-13.95,0.9563,0.9563,0,0,0,-0.1,-0.1);
 	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.hitareas(), 3);
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	// text
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#FFFFFF").s().p("AAfBwIAAiKQgBgRgGgHQgHgIgRAAQgUAAgJAQIAACaIhFAAIAAjbIBAAAIADAaQAWgeAnAAQAjAAAQAUQASAVAAApIAACNg");
@@ -2365,23 +2347,22 @@ p.nominalBounds = new cjs.Rectangle(-827.1,-698.9,1563.9,1559.3);
 	this.shape_6 = new cjs.Shape();
 	this.shape_6.graphics.f("#FFFFFF").s().p("AhFBUQgcgeAAg1IAAgCQAAgiANgZQAMgaAXgOQAXgNAfAAQArAAAZAYQAZAXAAApIhAAAQAAgRgJgJQgIgJgOAAQgaAAgEAiQgBAKgBATQAAAgAIANQAJANAQAAQAOAAAIgHQAIgJAAgOIBAAAQAAAkgaAYQgaAXgpAAQgvAAgbgeg");
 	this.shape_6.setTransform(-62.2,-70.1);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(2));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 	// plash_bg
 	this.shape_7 = new cjs.Shape();
 	this.shape_7.graphics.f("rgba(33,33,33,0.749)").s().p("ApjEdQh3AAhThUQhThTAAh2IAAAAQAAh1BThUQBThTB3AAITIAAQB2AABSBTQBUBUAAB1IAAAAQAAB2hUBTQhSBUh2AAg");
 	this.shape_7.setTransform(2.1,-71.575);
-	this.timeline.addTween(cjs.Tween.get(this.shape_7).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.shape_7).wait(1));
 	// icon
 	this.instance_1 = new lib.icon_pot_i1();
 	this.instance_1.parent = this;
 	this.instance_1.setTransform(-38,-38,0.5867,0.5867);
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 	// highlight
 	this.instance_2 = new lib.kitcheanim();
 	this.instance_2.parent = this;
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(2));
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-127.7,-141.2,255.4,254.7);
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(1));
+}).prototype = getMCSymbolPrototype(lib.kitc, new cjs.Rectangle(-127.7,-141.2,255.4,254.7), null);
 (lib.intro = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// timeline functions:
@@ -2562,12 +2543,6 @@ p.nominalBounds = new cjs.Rectangle(-514.8,-514.9,1029.6999999999998,1029.699999
 p.nominalBounds = new cjs.Rectangle(-860.3,-703.1,1605.5,1406.3000000000002);
 (lib.garage = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-	// timeline functions:
-	this.frame_0 = function() {
-		this.stop();
-	}
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 	// hitarea
 	this.instance = new lib.hitareas();
 	this.instance.parent = this;
@@ -2843,12 +2818,6 @@ p.nominalBounds = new cjs.Rectangle(-177.2,-82.2,354.7,164.2);
 p.nominalBounds = new cjs.Rectangle(-860.3,-861.5,3063.3999999999996,1721.9);
 (lib.allview = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
-	// timeline functions:
-	this.frame_0 = function() {
-		this.stop();
-	}
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 	// Layer_2
 	this.hand = new lib.arrowhands();
 	this.hand.name = "hand";
@@ -4289,8 +4258,8 @@ p.nominalBounds = new cjs.Rectangle(-2048,-2048,4096,4096);
 		stage.enableMouseOver();
 		cjs.Touch.enable(stage);
 		stage.enableMouseOver(10);
-		var canvas = document.getElementById("canvas");
-		var ctx = canvas.getContext('2d');
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext('2d', {willReadFrequently: true});
 		this.stop();
 		//audio components
 		var musicBG = new Audio('loop.mp3');
@@ -4376,7 +4345,7 @@ p.nominalBounds = new cjs.Rectangle(-2048,-2048,4096,4096);
 			var tmpCanvas = document.createElement('canvas');;
 			tmpCanvas.width = context.canvas.width;
 			tmpCanvas.height = context.canvas.height;
-			var tempContext = tmpCanvas.getContext("2d");
+			var tempContext = tmpCanvas.getContext('2d', {willReadFrequently: true});
 			tempContext.drawImage(context.canvas, 0, 0);
 			canvas.width = width;
 			canvas.height = height;
@@ -4950,8 +4919,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"index_atlas_P_.png?1688473403928", id:"index_atlas_P_"},
-		{src:"index_atlas_NP_.jpg?1688473403928", id:"index_atlas_NP_"}
+		{src:"index_atlas_P_.png?1688474388870", id:"index_atlas_P_"},
+		{src:"index_atlas_NP_.jpg?1688474388870", id:"index_atlas_NP_"}
 	],
 	preloads: []
 };
@@ -5037,7 +5006,7 @@ function handleComplete(evt,comp) {
 	//Code to support hidpi screens and responsive scaling.
 	function makeResponsive(isResp, respDim, isScale, scaleType) {		
 		var lastW, lastH, lastS=1;		
-		function resizeCanvas() {			
+	function resizeCanvas() {			
 			var w = lib.properties.width, h = lib.properties.height;			
 			var iw = window.innerWidth, ih=window.innerHeight;			
 			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
