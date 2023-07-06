@@ -1069,6 +1069,14 @@ p.nominalBounds = new cjs.Rectangle(-8,-7,15,13);
 	this.shape.graphics.f("#FF0000").s().p("AGcDDQgtg2AAhhIAAhXQAAhiAtg1QArg1BRAAQBQAAAsA1QAsA2AABhIAABXQAABigrA1QgtA1hQAAQhQAAgsg1gAHuiJQgNAYgBAwIAAB7QAAA2ANAZQAOAZAdAAQAdAAAOgYQANgZABg0IAAh2QAAg1gOgZQgOgagdAAQgdAAgNAYgAASDDQgsg2AAhhIAAhXQAAhiAsg1QArg1BRAAQBQAAAsA1QAsA2AABhIAABXQAABigrA1QgtA1hQAAQhQAAgsg1gABkiJQgNAYgBAwIAAB7QAAA2ANAZQAOAZAdAAQAdAAAOgYQANgZABg0IAAh2QAAg1gOgZQgOgagdAAQgdAAgNAYgAlQDmQgogTgXghQgWghAAgpIBwAAQACAbAPAPQAQAQAYAAQA5AAAAhTQAAhOhFAAQgnAAgUAaIhZgVIAej3IEbAAIAABXIjAAAIgLBgQAMgHAUgFQATgFASAAQBIAAAnAqQAnAqAABNQAAAvgVAlQgVAmglAUQgmAUgzAAQgtAAgogSgAq/BMIAAhVIDHAAIAABVg");
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 }).prototype = getMCSymbolPrototype(lib.minus500, new cjs.Rectangle(-70.4,-24.8,140.9,49.7), null);
+(lib.minus = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+	// Layer_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FFFFFF").s().p("AiVAsIAAhXIErAAIAABXg");
+	this.shape.setTransform(15,4.4);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+}).prototype = getMCSymbolPrototype(lib.minus, new cjs.Rectangle(0,0,30.1,8.9), null);
 (lib.mek_walk = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// Layer_2
@@ -2093,11 +2101,11 @@ p.nominalBounds = new cjs.Rectangle(-241.6,-532.1,57.9,58.8);
 	}
 	this.frame_49 = function() {
 		this.stop();
-		window.dispatchEvent(new Event('victory'));
+		window.dispatchEvent(new Event('fail'));
 	}
 	this.frame_74 = function() {
 		this.stop();
-		window.dispatchEvent(new Event('victory'));
+		window.dispatchEvent(new Event('fail'));
 	}
 	this.frame_99 = function() {
 		this.stop();
@@ -2105,11 +2113,11 @@ p.nominalBounds = new cjs.Rectangle(-241.6,-532.1,57.9,58.8);
 	}
 	this.frame_124 = function() {
 		this.stop();
-		window.dispatchEvent(new Event('victory'));
+		window.dispatchEvent(new Event('fail'));
 	}
 	this.frame_149 = function() {
 		this.stop();
-		window.dispatchEvent(new Event('victory'));
+		window.dispatchEvent(new Event('fail'));
 	}
 	this.frame_174 = function() {
 		this.stop();
@@ -2166,43 +2174,55 @@ p.nominalBounds = new cjs.Rectangle(-241.6,-532.1,57.9,58.8);
 	// num_mask (mask)
 	var mask = new cjs.Shape();
 	mask._off = true;
-	mask.graphics.p("ArhEzQhQAAAAhQIAAnFQAAhQBQAAIXDAAQBQAAAABQIAAHFQAABQhQAAg");
-	// index
-	this.instance_2 = new lib.numbers_mid();
+	var mask_graphics_0 = new cjs.Graphics().p("AuYEzQhkAAAAhQIAAnFQAAhQBkAAIcxAAQBkAAAABQIAAHFQAABQhkAAg");
+	var mask_graphics_300 = new cjs.Graphics().p("ArhEzQhQAAAAhQIAAnFQAAhQBQAAIXDAAQBQAAAABQIAAHFQAABQhQAAg");
+	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:mask_graphics_0,x:0,y:0}).wait(300).to({graphics:mask_graphics_300,x:0,y:0}).wait(100));
+	// minus
+	this.instance_2 = new lib.minus();
 	this.instance_2.parent = this;
-	this.instance_2.setTransform(58.1,-320.7,1.7,1.7);
+	this.instance_2.setTransform(-95.2,-53.1,1,1,0,0,0,15,4.4);
+	this.instance_2._off = true;
 	var maskedShapeInstanceList = [this.instance_2];
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1));
-	// tens
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(50).to({_off:false},0).to({y:-1},12,cjs.Ease.quadInOut).wait(63).to({y:-48.7},14,cjs.Ease.quadInOut).wait(261));
+	// index
 	this.instance_3 = new lib.numbers_mid();
 	this.instance_3.parent = this;
-	this.instance_3.setTransform(19.3,-320.7,1.7,1.7);
+	this.instance_3.setTransform(58.1,-320.7,1.7,1.7);
 	var maskedShapeInstanceList = [this.instance_3];
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1));
-	// hundreds
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:-320.7},4,cjs.Ease.quadInOut).wait(1).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.3},4,cjs.Ease.quadInOut).wait(1));
+	// tens
 	this.instance_4 = new lib.numbers_mid();
 	this.instance_4.parent = this;
-	this.instance_4.setTransform(-19.8,-320.7,1.7,1.7);
+	this.instance_4.setTransform(19.3,-320.7,1.7,1.7);
 	var maskedShapeInstanceList = [this.instance_4];
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},24,cjs.Ease.quadInOut).wait(1).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},24,cjs.Ease.quadInOut).wait(1));
-	// thousands
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},7,cjs.Ease.quadInOut).wait(1).to({y:320.2},0).to({y:-320.7},8,cjs.Ease.quadInOut).wait(1).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},7,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:320.2},8,cjs.Ease.quadInOut).wait(1));
+	// hundreds
 	this.instance_5 = new lib.numbers_mid();
 	this.instance_5.parent = this;
-	this.instance_5.setTransform(-59.4,191.9,1.7,1.7);
+	this.instance_5.setTransform(-19.8,-320.7,1.7,1.7);
 	var maskedShapeInstanceList = [this.instance_5];
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({y:255.9},24,cjs.Ease.quadInOut).wait(26).to({y:320.3},24,cjs.Ease.quadInOut).wait(50).to({y:255.9},25,cjs.Ease.quadInOut).wait(25).to({y:191.9},24,cjs.Ease.quadInOut).wait(26).to({y:127.7},25,cjs.Ease.quadInOut).wait(25).to({y:63.8},25,cjs.Ease.quadInOut).wait(1).to({y:127.7},24,cjs.Ease.quadInOut).wait(26).to({y:191.9},24,cjs.Ease.quadInOut).wait(26));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},24,cjs.Ease.quadInOut).wait(1).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:0},24,cjs.Ease.quadInOut).wait(1).to({y:320.3},24,cjs.Ease.quadInOut).wait(1));
+	// thousands
+	this.instance_6 = new lib.numbers_mid();
+	this.instance_6.parent = this;
+	this.instance_6.setTransform(-59.4,256.2,1.7,1.7);
+	var maskedShapeInstanceList = [this.instance_6];
+	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
+		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
+	}
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).to({y:320.2},24,cjs.Ease.quadInOut).wait(26).to({y:-320.7},0).to({y:320.3},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},0).to({y:256.4},24,cjs.Ease.quadInOut).wait(1).to({y:-320.7},24,cjs.Ease.quadInOut).wait(1).to({y:320.1},0).to({y:-320.7},24,cjs.Ease.quadInOut).wait(26).to({y:320.1},0).to({y:256.1},24,cjs.Ease.quadInOut).wait(26).to({y:191.8},24,cjs.Ease.quadInOut).wait(26).to({y:127.9},24,cjs.Ease.quadInOut).wait(1).to({y:191.8},24,cjs.Ease.quadInOut).wait(26).to({y:256.1},24,cjs.Ease.quadInOut).wait(26));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-75.7,-30.6,150.2,61.4);
 (lib.kitchen = function(mode,startPosition,loop) {
@@ -2670,25 +2690,25 @@ p.nominalBounds = new cjs.Rectangle(-860.3,-861.5,1406.3,1406.3);
 	this.frame_0 = function() {
 		this.stop();
 	}
-	this.frame_11 = function() {
+	this.frame_10 = function() {
 		this.stop();
 	}
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(11).call(this.frame_11).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(10).call(this.frame_10).wait(5));
 	// hit_area
 	this.instance = new lib.hit_area();
 	this.instance.parent = this;
 	this.instance.setTransform(0,0,0.661,0.839);
 	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.hit_area(), 3);
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(11));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true},1).wait(14));
 	// btn
 	this.instance_1 = new lib.assign_btn_anim();
 	this.instance_1.parent = this;
 	this.instance_2 = new lib.assigned_btn();
 	this.instance_2.parent = this;
 	this.instance_2.setTransform(-148,-62,0.693,0.693);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_1}]},5).to({state:[{t:this.instance_1}]},5).to({state:[{t:this.instance_2}]},1).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({y:8.7},5).to({y:0},5,cjs.Ease.quadOut).to({_off:true},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1}]}).to({state:[{t:this.instance_1}]},5).to({state:[{t:this.instance_1}]},5).to({state:[{t:this.instance_2}]},1).wait(4));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({y:8.7},5).to({y:0},5,cjs.Ease.quadOut).to({_off:true},1).wait(4));
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-177.2,-82.2,354.7,164.2);
 (lib.text_anim = function(mode,startPosition,loop) {
@@ -2702,19 +2722,19 @@ p.nominalBounds = new cjs.Rectangle(-177.2,-82.2,354.7,164.2);
 	// icon
 	this.instance = new lib.money_icon();
 	this.instance.parent = this;
-	this.instance.setTransform(-153,-38,0.26,0.26);
+	this.instance.setTransform(-171,-38,0.26,0.26);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	// t
 	this.money = new lib.money_anim();
 	this.money.name = "money";
 	this.money.parent = this;
-	this.money.setTransform(48.9,0,1.401,1.401);
+	this.money.setTransform(67,0,1.401,1.401);
 	this.timeline.addTween(cjs.Tween.get(this.money).wait(1));
 	// bg
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("rgba(0,0,0,0.647)").s().p("EgobAIzQiwgBAAiwIAAu0MBWXAAAIAAO0QABCwi2ABg");
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
-}).prototype = getMCSymbolPrototype(lib.text_anim, new cjs.Rectangle(-276.5,-929.5,552.9,1678.8), null);
+}).prototype = getMCSymbolPrototype(lib.text_anim, new cjs.Rectangle(-276.5,-929.5,552.9,1768.7), null);
 (lib.base1 = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// timeline functions:
@@ -4040,7 +4060,7 @@ p.nominalBounds = new cjs.Rectangle(-350,-210,700,420);
 	this.arrowR.parent = this;
 	this.arrowR.setTransform(422.3,0,1,1,0,0,180);
 	this.timeline.addTween(cjs.Tween.get(this.arrowR).wait(1));
-}).prototype = getMCSymbolPrototype(lib.ui_soldiers, new cjs.Rectangle(-472.5,-1373.4,1822.3,1678.8), null);
+}).prototype = getMCSymbolPrototype(lib.ui_soldiers, new cjs.Rectangle(-472.5,-1373.4,1822.3,1768.8), null);
 (lib.background = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 	// timeline functions:
@@ -4415,26 +4435,12 @@ p.nominalBounds = new cjs.Rectangle(-2048,-2048,4096,4096);
 		function arrowsClickable() {
 			arrowL.clickable = true;
 			arrowR.clickable = true;
-		}
-		function showArrows() {
 			arrowR.visible = true;
 			arrowL.visible = true;
-			/*createjs.Tween.get(arrowR).to({
-				alpha: 1
-			}, 330, createjs.Ease.cubicOut);
-			createjs.Tween.get(arrowL).to({
-				alpha: 1
-			}, 330, createjs.Ease.cubicOut);*/
 		}
 		function hideArrows() {
 			arrowR.visible = false;
 			arrowL.visible = false;
-			/*createjs.Tween.get(arrowR).to({
-				alpha: 0
-			}, 225, createjs.Ease.cubicOut);
-			createjs.Tween.get(arrowL).to({
-				alpha: 0
-			}, 225, createjs.Ease.cubicOut);*/
 		}
 		function pinchCurrentCard() {
 			createjs.Tween.get(currentCard).to({
@@ -4555,12 +4561,11 @@ p.nominalBounds = new cjs.Rectangle(-2048,-2048,4096,4096);
 					canteen.clickable = false;
 					training.clickable = false;
 					shooting.clickable = false;
-					showArrows();
 					restoreCurrentCard();
 					createjs.Tween.get(garage).to({
 						alpha: 0,
 						visible: false
-					}, 330, createjs.Ease.cubicInOut).call(function () {
+					}, 330, createjs.Ease.cubicInOut).call(arrowsClickable).call(function () {
 						currentCard.gotoAndPlay(1);
 					});
 				}
@@ -4588,12 +4593,11 @@ p.nominalBounds = new cjs.Rectangle(-2048,-2048,4096,4096);
 					canteen.clickable = false;
 					training.clickable = false;
 					shooting.clickable = false;
-					showArrows();
 					restoreCurrentCard();
 					createjs.Tween.get(canteen).to({
 						alpha: 0,
 						visible: false
-					}, 330, createjs.Ease.cubicInOut).call(function () {
+					}, 330, createjs.Ease.cubicInOut).call(arrowsClickable).call(function () {
 						currentCard.gotoAndPlay(1);
 					});
 				}
@@ -4621,12 +4625,11 @@ p.nominalBounds = new cjs.Rectangle(-2048,-2048,4096,4096);
 					canteen.clickable = false;
 					training.clickable = false;
 					shooting.clickable = false;
-					showArrows();
 					restoreCurrentCard();
 					createjs.Tween.get(training).to({
 						alpha: 0,
 						visible: false
-					}, 330, createjs.Ease.cubicInOut).call(function () {
+					}, 330, createjs.Ease.cubicInOut).call(arrowsClickable).call(function () {
 						currentCard.gotoAndPlay(1);
 					});
 				}
@@ -4654,12 +4657,11 @@ p.nominalBounds = new cjs.Rectangle(-2048,-2048,4096,4096);
 					canteen.clickable = false;
 					training.clickable = false;
 					shooting.clickable = false;
-					showArrows();
 					restoreCurrentCard();
 					createjs.Tween.get(shooting).to({
 						alpha: 0,
 						visible: false
-					}, 330, createjs.Ease.cubicInOut).call(function () {
+					}, 330, createjs.Ease.cubicInOut).call(arrowsClickable).call(function () {
 						currentCard.gotoAndPlay(1);
 					});
 				}
@@ -4669,39 +4671,39 @@ p.nominalBounds = new cjs.Rectangle(-2048,-2048,4096,4096);
 			addMoney();
 			if (currentCard == card1) {
 				card1.btn.clickable = false;
+				card1.btn.gotoAndStop(13);
 				restoreCurrentCard();
 				createjs.Tween.get(main.base1.training).to({
 					alpha: 0,
 					visible: false
 				}, 330, createjs.Ease.cubicInOut);
-				showArrows();
 			}
 			if (currentCard == card2) {
 				card2.btn.clickable = false;
+				card2.btn.gotoAndStop(13);
 				restoreCurrentCard();
 				createjs.Tween.get(main.base1.garage).to({
 					alpha: 0,
 					visible: false
 				}, 330, createjs.Ease.cubicInOut);
-				showArrows();
 			}
 			if (currentCard == card3) {
 				card3.btn.clickable = false;
+				card3.btn.gotoAndStop(13);
 				restoreCurrentCard();
 				createjs.Tween.get(main.base1.canteen).to({
 					alpha: 0,
 					visible: false
 				}, 330, createjs.Ease.cubicInOut);
-				showArrows();
 			}
 			if (currentCard == card4) {
 				card4.btn.clickable = false;
+				card4.btn.gotoAndStop(13);
 				restoreCurrentCard();
 				createjs.Tween.get(main.base1.shooting).to({
 					alpha: 0,
 					visible: false
 				}, 330, createjs.Ease.cubicInOut);
-				showArrows();
 			}
 		});
 		function removeMoney() {
@@ -4807,8 +4809,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"index_atlas_P_.png?1688649886223", id:"index_atlas_P_"},
-		{src:"index_atlas_NP_.jpg?1688649886223", id:"index_atlas_NP_"}
+		{src:"index_atlas_P_.png?1688653404844", id:"index_atlas_P_"},
+		{src:"index_atlas_NP_.jpg?1688653404844", id:"index_atlas_NP_"}
 	],
 	preloads: []
 };
